@@ -1,0 +1,30 @@
+
+.container{
+    max-width: 1152px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.btn{
+    width: 190px;
+    height: 45px;
+    font-size: 14px;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+.btn:hover{
+    color: #5db2ff;
+    background-color: #fff;
+}

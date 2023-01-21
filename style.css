@@ -1,0 +1,902 @@
+@import 'comon.css';
+
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --gray: #6c757d;
+    --primary: #007bff;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --lightblue: #3997fc;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ /* start header */
+
+header{
+    background-color: #fff;
+}
+header .contact-main{
+    background-color: var(--light);
+}
+header .contact-page{
+    width: 100%;
+    height: 50px;
+}
+header .contact-page ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+header .contact-page ul li a .fab{
+    color: rgb(148, 144, 144);
+    font-size: 15px;
+}
+header .contact-page .contact2 i{
+    margin-left: 30px;
+    color:var(--primary);
+    cursor: pointer;
+}
+header .contact-page .contact2 p{
+    margin-left: 10px;
+    color: rgb(148, 144, 144);
+    cursor: pointer;
+}
+ /* end header */
+
+ /* start navbar */
+.nav-main{
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+}
+nav .link ul li{
+    list-style: none;
+    margin-left: 30px;
+    transition: all .3s ease;
+}
+nav .link ul li:hover a{
+    color: var(--lightblue);
+}
+nav .link ul li a{
+    text-decoration: none;
+    color: var(--gray);
+    text-transform: uppercase;
+}
+nav .link .btn{
+    width: 190px;
+    height: 45px;
+    margin-left: 100px;
+    font-size: 14px;
+    color: #fff;
+    background-color: var(--lightblue);
+    outline: none;
+    border: 2px solid var(--lightblue);
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+nav .link .btn:hover{
+    background-color: transparent;
+    color: var(--lightblue);
+    border-color: var(--lightblue);
+    cursor: pointer;
+}
+
+#check{
+    display: none;
+}
+.checkbtn{
+    display: none;
+}
+
+.link .checkbtn .fas{
+    font-size: 30px;
+    color:rgb(88, 88, 88);
+}
+/* end navbar */
+
+/* start section1 */
+.section-1-1{
+    overflow-x: auto;
+}
+
+section .section1{
+    background: url(images/banner-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    height: 686px;
+    background-position: center;
+    background-color: #dfe2e6;
+}
+section .section1wrap{
+    background: url(images/banner-2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    height: 686px;
+    background-position: center;
+    background-color: #dfe2e6;
+}
+section .section1 .container{
+    height: auto;
+}
+section .section1 .text{
+    width: 550px;
+    height: 100%;
+    padding-top: 150px;
+    margin-left: -450px;
+}
+section .section1 .text h1{
+    font-size: 80px;
+    font-weight: bold;
+    font-family: system-ui;
+}
+section .section1 .text h2{
+    font-size: 80px;
+    font-weight: lighter;
+    margin-top: 8px;
+    color: rgb(58, 58, 58);
+}
+section .section1 .text p{
+    font-size: 25px;
+    margin-top: 20px;
+    color:rgb(148, 144, 144);
+}
+section .section1 .text .btn{
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+    color: #fff;
+    background-color: var(--lightblue);
+    outline: none;
+    border: 2px solid var(--lightblue);
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all .3s ease;
+    margin-top: 30px;
+}
+section .section1 .text .btn:hover{
+    background-color: transparent;
+    color: var(--lightblue);
+    border-color: var(--lightblue);
+    cursor: pointer;
+}
+/* end section1 */
+
+/* start section2 */
+section.section2{
+    background-color: #83c4ff;
+    width: 100%;
+    height: 350px;
+}
+section.section2 .container{
+    justify-content: center;
+}
+
+section.section2 .container .div1{
+    width: 380px;
+    height: 350px;
+    color: #fff;
+    padding: 30px;
+}
+.div-mid{
+    background-color: #5db2ff;
+}
+section.section2 .container .fas{
+    font-size: 50px;
+    margin-top: 30px;
+}
+section.section2 .container h2{
+    font-size: 30px;
+    margin-top: 20px;
+    font-family: system-ui;
+}
+section.section2 .container p{
+    font-size: 17px;
+    margin-top: 20px;
+}
+section.section2 .container button{
+    margin-top: 30px;
+}
+/* end section2 */
+
+/* start section2 */
+section.section3{
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 180px;
+}
+section.section3 .container .left{
+    width: 500px;
+}
+section.section3 .container .left img{
+    width: 320px;
+    height: 400px;
+}
+section.section3 .container .left .img2{
+    margin-left: -100px;
+    transform: translateY(90px);
+}
+section.section3 .container .right{
+    width: 500px;
+}
+section.section3 .container .right hr{
+    width: 50px;
+    background-color: var(--primary);
+    height: 2px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    margin-bottom: 35px;
+}
+section.section3 .container .right h3{
+    font-size: 20px;
+    font-family: sans-serif;
+    color:rgb(88, 88, 88);
+    margin-bottom: 15px;
+}
+section.section3 .container .right h2{
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    width: 400px;
+    margin-bottom: 15px;
+}
+section.section3 .container .right p{
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color:rgb(148, 144, 144);
+    margin-bottom: 30px;
+}
+section.section3 .container .right ul{
+    margin-left: 15px;
+}
+section.section3 .container .right ul li{
+    list-style: circle;
+    font-size: 20px;
+    color: rgb(148, 144, 144);
+    line-height: 30px;
+}
+section.section3 .container .right .btn-primary{
+    width: 150px;
+    height: 40px;
+    background-color: #fff;
+    color: var(--lightblue);
+    border: 2px solid var(--lightblue);
+    margin-top: 50px;
+    margin-left: -16px;
+    font-weight: 100;
+    font-family: sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+section.section3 .container .right .btn-primary:hover{
+    color: #fff;
+    background-color: var(--lightblue);
+}
+/* end section3 */
+
+/* start section4 */
+section.section4{
+    background-color: #f3f9fd;
+    padding: 20px;
+}
+
+section.section4 .container h1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 36px;
+    font-family: monospace;
+}
+section.section4 .container .p1{
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 26px;
+    margin-top: 20px;
+    color:rgb(150, 146, 146);
+}
+section.section4 .container hr{
+    width: 50px;
+    background-color: var(--primary);
+    height: 2px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+section.section4 .card-box{
+    width: 100%;
+    padding: 5px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    margin-bottom: 60px;
+}
+section.section4 .card-box .card{
+    height: 400px;
+    width: 350px;
+    position: relative;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 1px 1px 20px rgb(229, 241, 252);
+    border-radius: 5px;
+}
+
+section.section4 .card-box .card .imgs img{
+    width: 100%;
+}
+section.section4 .card-box .card h2{
+    font-family: monospace;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+section.section4 .card-box .card h2:hover{
+    color: var(--lightblue);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+section.section4 .card-box .card p{
+    font-size: 17px;
+    color:rgb(150, 146, 146);
+    font-family: sans-serif;
+    margin-top: 20px;
+    line-height: 25px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+section.section4 .card-box .card a{
+    font-size: 18px;
+    color: var(--lightblue);
+    text-decoration: none;
+    margin-left: 25px;
+}
+section.section4 .card-box .card a:hover{
+    text-decoration: underline;
+}
+section.section4 .card-box .card:hover .imgs img{
+    width: 100%;
+    transition: all .3s ease;
+    transform: scale(1.01);
+}
+/* end section4 */
+
+/* start section5 */
+section .section5{  
+    width: 100%;
+    background-color: #000;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: auto;
+    margin-bottom: 10px;
+}
+section .section5 .image{
+    background: url(images/mid-banner-1.webp);
+    height: 600px;
+    min-width: 100%;
+    background-size: cover;
+    opacity: .6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section .section5 .image-1{
+    background: url(images/mid-banner-2.webp);
+    height: 600px;
+    min-width: 100%;
+    background-size: cover;
+    opacity: .6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.middle{
+    position: relative;
+    top: -27rem;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.middle .fas{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.middle p{
+    font-size: 25px;
+    line-height: 40px;
+}
+.middle hr{
+    width: 50px;
+    height: 3px;
+    background: #fff;
+    margin-top: 20px;
+}
+.middle h5{
+    margin-top: 30px;
+    font-size: 25px;
+}
+section .excellent{
+    background-color: #f5fbff;
+    position: relative;
+    top: -300px;
+}
+section .excellent .container{
+    width: 100%;
+    height: 100px;
+}
+section .excellent .container > div{
+    width: 380px;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+}
+/* end section5 */
+
+/* start section6 */
+section.section6{
+    width: 100%;
+    margin-top: -280px;
+}
+section.section6 .container{
+    padding: 50px;
+}
+section.section6 .container > div{
+    width: 500px;
+}
+section.section6 .container .fas{
+    font-size: 40px;
+    color: #fff;
+    background-color: var(--lightblue);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+section.section6 .container h3{
+    font-size: 20px;
+    font-family: sans-serif;
+    color:rgb(88, 88, 88);
+    margin-top: 20px;
+}
+section.section6 .container p{
+    font-size: 18px;
+    color:rgb(148, 144, 144);
+    font-family: sans-serif;
+    margin-top: 20px;
+    line-height: 30px;
+}
+section.section6 .container img{
+    width: 100%;
+    border-radius: 7px;
+}
+section.section6 hr{
+    margin-bottom: 100px;
+    width: 1152px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: rgb(238, 238, 238);
+    height: 1px;
+    border: none;
+}
+/* end section6 */
+
+/* start section7 */
+section.section7 .container{
+    margin-top: 200px;
+    width: 100%;
+}
+section.section7 .container h1{
+    font-family: sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+section.section7 .container .mans{
+    margin-top: 50px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+section.section7 .container .man{
+    min-width: 275px;
+    margin: 10px;
+    background-color: #f5fbff;
+    text-align: center;
+    font-family: sans-serif;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+section.section7 .container .man img{
+    width: 100%;
+}
+section.section7 .container .man h2{
+    font-size: 20px;
+    color:rgb(75, 73, 73);
+    margin-top: 10px;
+}
+section.section7 .container .man p{
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    color:rgb(150, 146, 146);
+}
+section.section7 .container .man:hover{
+    background-color: var(--lightblue);
+    transform: scale(1.02);
+}
+section.section7 .container .man:hover h2, section.section7 .container .man:hover p{
+    color: #fff;
+}
+/* end section7 */
+
+/* start section8 */
+section .section8{
+    width: 100%;
+    height: 250px;
+    justify-content: center;
+    position: relative;
+    background-color: var(--lightblue);
+    margin-top: 100px;
+}
+section .section8 .contact-1{
+    background: url(images/Emergency\ Contact-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    opacity: .3;
+}
+section .section8 .contact-2{
+    background: url(images/Emergency\ Contact-2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    opacity: .3;
+}
+.mid{
+    justify-content: space-around;
+    position: relative;
+    top: -150px;
+}
+.mid .text{
+    margin-right: 30px;
+}
+.mid .text h2{
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 27px;
+}
+.mid .text p{
+    font-family: sans-serif;
+    color: #fff;
+    margin-top: 10px;
+}
+.mid button{
+    border-radius: 50px;
+    width: 210px;
+    font-size: 15px;
+}
+/* end section8 */
+
+ /* start footer */
+footer{
+    background-color: #1f1f1f;
+    height: 500px;
+    width: 100%;
+    margin-top: -60px;
+}
+footer .container{
+    padding: 100px;
+}
+footer .container > div{
+    width: 200px;
+}
+footer .container > div:nth-child(1){
+    width: 400px;
+    margin-right: 20px;
+}
+footer .container .p{
+    color: rgb(124, 124, 124);
+    margin-top: 40px;
+    line-height: 30px;
+}
+footer .container .f-logo .fab{
+    font-size: 30px;
+    color: rgb(124, 124, 124);
+    margin-top: 30px;
+    margin-right: 15px;
+}
+footer .container .f-logo .fab:hover{
+    color: var(--lightblue);
+    transition: all .3s ease;
+}
+footer h2{
+    color: #Ffff;
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+    display: flex;
+    margin-top: 20px;
+    font-family: sans-serif;
+    transition: all .3s ease;
+}
+footer a:hover{
+    color: var(--lightblue);
+}
+footer p{
+    color: rgb(124, 124, 124);
+    font-family: sans-serif;
+    line-height: 30px;
+}
+footer .copy{
+    width: 100%;
+    /* height: 50px; */
+    background-color: #000;
+}
+footer .copy p{
+    color: rgb(124, 124, 124);
+    text-align: center;
+    padding: 30px;
+}
+footer .copy p span{
+    color: var(--lightblue);
+}
+ /* end footer */
+
+
+  /* mobile view */
+
+@media (max-width:768px){
+    
+    header{
+        display: none;
+    }
+    .link button{
+        display: none;
+    }
+    .link ul{
+        display: none;
+    }
+    .checkbtn{
+        display: block;
+    }
+    #check:checked ~ ul{
+        display: block;
+        background-color: rgb(245, 245, 245);
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+    }
+    #check:checked ~ ul li{
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+    #check:checked ~ ul li a{
+        color: #000;
+        font-size: 17px;
+        font-weight: bold;
+        font-family: sans-serif;
+        transition: all .3s ease;
+    }
+    #check:checked ~ ul li a:hover{
+        color: var(--lightblue);
+    }
+    section .section1wrap{
+        display: none;
+    }
+    section .section1 .text{
+        width: 100%;
+        padding-top: 0;
+        margin-left: 0;
+        padding: 5px;
+    }
+    section .section1 .text h1{
+        font-size: 44px;
+    }
+    section .section1 .text h2 {
+        font-size: 40px;
+    }
+    section .section1 .text p {
+        font-size: 20px;
+    }
+    section .section1 .text .btn {
+        width: 152px;
+        height: 38px;
+    }
+    section .section1 {
+        min-width: 100%;
+        height: 325px;
+    }
+    .section2 .container{
+        display: block;
+    }
+    section.section2 .container .div1 {
+        width: 100%;
+        height: 330px;
+    }
+    .section3 .container{
+        display: block;
+        width: 100%;
+    }
+    section.section3 .container .left {
+        width: 211px;
+        margin-top: 250px;
+    }
+    section.section3 .container .left img{
+        width: 100%;
+        height: 100%;
+    }
+    section.section3 .container .right {
+        width: 100%;
+        margin-top: 150px
+    }
+    section.section3 .container .right h2{
+        font-size: 28px;
+        width: 100%;
+    }
+    section.section4 {
+        padding: 5px;
+    }
+    section.section4 .card-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    section.section4 .card-box .card{
+        width: 100%;
+    }
+    section .section5 {
+        height: 396px;
+    }
+    section .section5 .image{
+        width: 100%;
+    }
+    .middle {
+        top: -21rem;
+        width: 350px;
+    }
+    .middle p{
+        text-align: center;
+        font-size: 15px;
+        width: 100%;
+    }
+    .middle h5 {
+        margin-top: 8px;
+        font-size: 20px;
+    }
+    section .excellent{
+        display: none;
+    }
+    section.section6 .container{
+        flex-direction: column;
+        padding: 8px;
+    }
+    section.section6 .container > div {
+        width: 100%;
+    }
+    section.section6 .container > div {
+        width: 100%;
+    }
+    footer .container {
+        padding: 13px;
+        display: block;
+    }
+    footer {
+        height: 100%;
+    }
+    footer .container > div:nth-child(1) {
+        width: 100%;
+    }
+    section.section4 .container .p1 {
+        width: 100%;
+    }
+    .navbar{
+        justify-content: space-around;
+    }
+    section.section6 hr{
+        display: none;
+    }
+    .mid .flex{
+        display: block;
+        width: 50%;
+    }
+    .mid .text h2{
+        font-size: 11px;
+    }
+    .mid button{
+        width: 100%
+    }
+    .mid .text{
+        margin-right: 0;
+    }
+}
+
+
+/* tablet view */
+
+@media (max-width:992px){
+    .container{
+        max-width: 800px;
+    }
+    nav .link .btn {
+        width: 163px;
+        margin-left: 45px
+    }
+    nav .link ul li {
+        margin-left: 15px;
+    }
+    nav .link ul li a{
+        font-size: 15px;
+    }
+    section.section4 .card-box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section.section3 .container .right {
+        width: 238px;
+    }
+    section.section3 .container .left {
+        width: 300px;
+    }
+    section.section3 .container .left img{
+        width: 100%;
+    }
+    section.section3 .container .right h2{
+        width: 305px;
+    }
+    section .section1 .text {
+        width: 450px;
+    }
+    .mid button {
+        width: 100%;
+    }   
+    section.section6 .container > div {
+        width: 349px;
+    }
+    section .excellent .container > div {
+        width: 100%;
+    }
+    section.section2 .container .div1 {
+        width: 100%;
+    }
+}
